@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/nurviapp/static/css/main.2ef0ba50.chunk.css",
+    "main.js": "/nurviapp/static/js/main.b33c08c7.chunk.js",
+    "main.js.map": "/nurviapp/static/js/main.b33c08c7.chunk.js.map",
+    "runtime-main.js": "/nurviapp/static/js/runtime-main.03a2b456.js",
+    "runtime-main.js.map": "/nurviapp/static/js/runtime-main.03a2b456.js.map",
+    "static/css/2.fe60a06c.chunk.css": "/nurviapp/static/css/2.fe60a06c.chunk.css",
+    "static/js/2.a7973ddd.chunk.js": "/nurviapp/static/js/2.a7973ddd.chunk.js",
+    "static/js/2.a7973ddd.chunk.js.map": "/nurviapp/static/js/2.a7973ddd.chunk.js.map",
+    "static/js/3.aa373b6e.chunk.js": "/nurviapp/static/js/3.aa373b6e.chunk.js",
+    "static/js/3.aa373b6e.chunk.js.map": "/nurviapp/static/js/3.aa373b6e.chunk.js.map",
+    "index.html": "/nurviapp/index.html",
+    "static/css/2.fe60a06c.chunk.css.map": "/nurviapp/static/css/2.fe60a06c.chunk.css.map",
+    "static/css/main.2ef0ba50.chunk.css.map": "/nurviapp/static/css/main.2ef0ba50.chunk.css.map",
+    "static/js/2.a7973ddd.chunk.js.LICENSE.txt": "/nurviapp/static/js/2.a7973ddd.chunk.js.LICENSE.txt",
+    "static/media/cake.jpg": "/nurviapp/static/media/cake.5c7b5423.jpg",
+    "static/media/cakes1.jpg": "/nurviapp/static/media/cakes1.afc3d5c1.jpg",
+    "static/media/logo.jpg": "/nurviapp/static/media/logo.f5486617.jpg",
+    "static/media/pastry.jpg": "/nurviapp/static/media/pastry.ed68f5ec.jpg",
+    "static/media/s1.jpg": "/nurviapp/static/media/s1.3e4f7d9c.jpg",
+    "static/media/s2.jpg": "/nurviapp/static/media/s2.eb7240ea.jpg",
+    "static/media/s3.jpg": "/nurviapp/static/media/s3.65e7d937.jpg",
+    "static/media/slick-theme.css": "/nurviapp/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03a2b456.js",
+    "static/css/2.fe60a06c.chunk.css",
+    "static/js/2.a7973ddd.chunk.js",
+    "static/css/main.2ef0ba50.chunk.css",
+    "static/js/main.b33c08c7.chunk.js"
+  ]
+}
