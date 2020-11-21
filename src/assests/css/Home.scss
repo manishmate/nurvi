@@ -1,0 +1,25 @@
+
+@import 'variables';
+
+
+.catogarySlidermmmmmmm {
+  
+   .product-bottom{
+    display: none;
+  }
+  
+   .srch{
+     display: none;
+  }
+  
+  &:hover .card-overlay {
+        display: block;
+        .card-overlay-title {
+            font-family: 'Pacifico', cursive;
+            color: $primaryColor;
+            font-size: 25px;
+        }
+    }
+  
+    
+}

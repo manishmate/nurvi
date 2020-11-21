@@ -1,0 +1,127 @@
+
+@import './variables.scss';
+
+.primary-title {
+    font-family: $mainFontstyle;
+    color: $primaryColor;
+}
+
+.section-title
+{
+  margin:35px auto;
+};
+
+.floatLeft {
+    float:left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.ta-left{
+    text-align: left;
+}
+
+.ta-right{
+    text-align: right
+}
+
+.title {
+    color: $primaryColor;
+ font-family: $mainFontstyle;
+};
+
+.dropDownWrapper .customDrpDwn.small
+ {
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.breadcrumb {
+    background-color: #f8f9fa !important;
+    height: 100%;
+}
+
+
+.btn-wrapper {
+     
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    height: 45px;
+    outline: none !important;
+    border: none;
+    background: #F05F69;
+    background: linear-gradient(90deg, rgba(251,229,107,1) 0%, rgba(240,95,105,1) 100%);
+    border-radius: 25px;
+    transition: color 4s ease-out;
+    box-shadow: 0px 1px 4px -2px #000;
+
+    z-index: 1;
+    position: relative;
+    
+   
+
+    &.big {
+        width:100%;
+    }
+
+     button{
+        transition: linear 1s;
+        width:100%;
+        height: 50px;
+        background:transparent;
+        border-color: transparent;
+     }
+     
+     button:hover {
+        background-color: transparent;
+        border-color: transparent;
+     }
+
+     
+
+     button.primary {
+
+        &.small {
+           
+        }
+
+     }
+
+}
+
+.btn-wrapper:before {
+    background: #91a5f4;
+    background: linear-gradient(90deg, rgba(240,95,105,1) 0%, rgba(251,229,107,1) 100%);
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    box-shadow: 0px 1px 4px -2px #000;
+    outline: none !important;
+    border: none;
+    border-radius: 25px;
+}
+.btn-wrapper:hover:before {
+    opacity: 1;
+}
+.btn-wrapper:hover {
+    color: #fff;
+}
+
+button:focus {
+    outline: none !important;
+    outline-offset: none !important;
+}
