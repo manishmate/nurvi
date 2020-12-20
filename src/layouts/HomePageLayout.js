@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import ReactSlider from "../sharedfiles/Slider";
 import CatogarySlider from "../sharedfiles/CatogarySlider";
-import { Container,Row,Col } from 'react-bootstrap';
+import { Container,Row,Col,Button } from 'react-bootstrap';
 import HomepageLayoutStore from './HomepageLayoutStore'
-
+import ImagesURLs from '../sharedfiles/ImagesURLs'
 
 const HomePageLayout = observer(
   class HomePageLayout extends React.Component {
@@ -25,7 +25,7 @@ const HomePageLayout = observer(
         <React.Fragment>
 
           <section className="mainSlider-section">
-            <Container fluid={true}>
+            
               <div className="homeSlider">
 
                 <ReactSlider
@@ -41,12 +41,15 @@ const HomePageLayout = observer(
                 />
 
               </div>
-            </Container>
+             
           </section>
           <section >
             <Container>
-              <div className="section-title bg-light">
+              <div className="section-title ">
                 <h2 className="primary-title grand-title p-t-allign">Catogaries</h2>
+                <div cassName="chef_hat_img">
+                    <img src={ImagesURLs.chef_hat.default}/>
+                  </div>
               </div>
              
               <Row className="catogoryRow">
@@ -86,12 +89,14 @@ const HomePageLayout = observer(
              */}
              </Container>
           </section>
-
-            <section>
+          <section>
               <Container >
               <Container>
-                <div className="section-title bg-light">
+                <div className="section-title">
                   <h2 className="title">Best Selling Cakes</h2>
+                  <div cassName="chef_hat_img">
+                    <img src={ImagesURLs.chef_hat.default}/>
+                  </div>
                 </div>
                 </Container>
                 <ReactSlider
@@ -111,12 +116,27 @@ const HomePageLayout = observer(
                 />
               </Container>
             </section>
-
+           
+            <section className=" section-with-bg">
+                <div className="section-with-bg-content">
+                   <h2 className="title" >Need any help ?</h2>
+                   <div className="ml-2 btn-wrapper">
+                            <Button className="mr-1 ml-1 primary small"  type="submit">
+                                 Contact Us
+                             </Button>
+                      </div>
+                </div>
+               
+            </section>
+            
             <section>
-              <Container fluid={true}>
+              <Container className="" fluid={true}>
               <Container>
-                <div className="section-title bg-light">
+                <div className="section-title ">
                   <h2 className="title">Best Selling Bakery Product</h2>
+                  <div cassName="chef_hat_img">
+                    <img src={ImagesURLs.chef_hat.default}/>
+                  </div>
                 </div>
                 </Container>
                 <ReactSlider
@@ -136,7 +156,10 @@ const HomePageLayout = observer(
                   cards={this.homepageLayoutStore.cakeData}
                 />
               </Container>
+              <div className="wave-separator"></div>
             </section>
+
+           
 
         </React.Fragment>
       )

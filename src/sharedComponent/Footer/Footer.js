@@ -1,63 +1,100 @@
-import { Button,Form } from 'react-bootstrap';
-import React,{Component} from 'react';
+import { Button, Form } from 'react-bootstrap';
+import React, { Component } from 'react';
 
 import { observer } from "mobx-react";
-import {Navbar, NavbarBrand,Container,Row,Col} from 'react-bootstrap';
+import { Navbar, NavbarBrand, Container, Row, Col } from 'react-bootstrap';
 import imageURLs from '../../sharedfiles/ImagesURLs';
+import { IconContext } from "react-icons";
+import { AiFillFacebook, AiFillInstagram, AiFillYoutube } from 'react-icons/ai';
 
 const Footer = observer(
     class Footer extends React.Component {
-		
-		componentDidMount(){
-			
-			
-		}
-		
+
+        componentDidMount() {
+
+
+        }
+
         render() {
-            const {appstore} = this.props;
-            return(
-                <div className="appfooter">  
-                    
-                    <Navbar color="dark" dark>
-                        <Container>
-                            {/* <NavbarBrand>Footer</NavbarBrand> */}
-                            <Row>
-                                <Col md="4">
-                                <div className="socialmedia">
-                                    <h3>Follow Us</h3>
-                                    <ul className="socialIcon">
-                                        <li><a href="#"><h6><span class="fb"><img src={imageURLs.fb}></img></span> Facebook</h6></a></li>
-                                        <li><a href="#"><h6> <span class="twit"><img src={imageURLs.twitter}></img></span>Twitter</h6></a></li>
-                                        <li><a href="#"><h6> <span class="insta"><img src={imageURLs.insta}></img></span> Instagram</h6></a></li>
-                                        <li><a href="#"><h6> <span class="youtube"><img src={imageURLs.youtube}></img></span> Youtube</h6></a></li>
+            const { appstore } = this.props;
+            return (
+                <div className="appfooter ta-left">
+
+                    <Container>
+                        {/* <NavbarBrand>Footer</NavbarBrand> */}
+                        <Row className="footer-content">
+
+                            <Col col="md-4">
+                                <div className="">
+                                    <h3 className="title">About Us</h3>
+
+                                    <p>Cakeryshop theme is a versatile and beautiful WordPress theme. This theme is specially designed for Bakery related items such as Cakes, Brownies, Biscuits etc. It comes with auto demo import features and powerful theme options panel.</p>
+                                </div>
+                            </Col>
+                            <Col col="md-4">
+                                <div className="">
+                                    <h3 className="title">Work Timings</h3>
+                                    <p>Our work timings are:</p>
+                                    <ul>
+                                        <li>
+                                            Monday - Friday: 8AM - 8PM
+                                        </li>
+                                        <li>
+                                            Saturday: 9AM - 4PM
+                                        </li>
+                                        <li>
+                                            Sunday: closed
+                                        </li>
                                     </ul>
+
                                 </div>
-                                </Col>
-                                <Col col="md-4">
-                                <div class="">
-                                    <h3>Store Information</h3>
-                                    <h4>The company name,
-                                        <span>Lorem ipsum dolor,</span>
-                                        Glasglow Dr 40 Fe 72.</h4>
-                                    <h5>+955 123 4567</h5>	
-                                    <p><a href="mailto:example@email.com">contact@example.com</a></p>
+
+                            </Col>
+
+                            <Col col="md-4">
+                                <div className="">
+                                    <h3 className="title">Peace of Mind</h3>
+                                    <p>We offer 100% money back guarantee. If you are unsatisfied with your purchase, we will refund your 100% of the money. No questions asked! So stop waiting and order today :-) </p>
                                 </div>
-                                </Col>
-                                <Col col="md-4">
-                                <div class="">
-                                    <h3>Store Information</h3>
-                                    <h4>The company name,
-                                        <span>Lorem ipsum dolor,</span>
-                                        Glasglow Dr 40 Fe 72.</h4>
-                                    <h5>+955 123 4567</h5>	
-                                    <p><a href="mailto:example@email.com">contact@example.com</a></p>
+                            </Col>
+                        </Row>
+
+                        <Row className="p-3 ">
+                            <Col col="md-6">
+                                <div className="footer-social-icon ">
+
+
+
+                                    <div className="zigzag-circle-bg clipped">
+                                    <IconContext.Provider value={{ className: "insta-icon" }}>
+                                            <AiFillInstagram />
+                                        </IconContext.Provider>
+                                    </div>
+                                    <div className="zigzag-circle-bg clipped">
+                                    <IconContext.Provider value={{ className: "fb-icon" }}>
+                                            <AiFillFacebook />
+                                        </IconContext.Provider>
+                                    </div>
+                                    <div className="zigzag-circle-bg clipped">
+                                       
+                                        <IconContext.Provider value={{ className: "youtube-icon" }}>
+                                            <AiFillYoutube />
+                                        </IconContext.Provider>
+                                    </div>
                                 </div>
-                                </Col>
-                            </Row>
-                        </Container>
-                    </Navbar>
-               </div>
-        
+
+                            </Col>
+
+                            <Col col="md-6 ">
+                                <div className="footer-copyright-content floatRight">Copyright © Nurvi 2020 </div>
+                                
+                            </Col>
+
+                        </Row>
+                    </Container>
+
+                </div>
+
             )
         }
     }

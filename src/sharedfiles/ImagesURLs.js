@@ -16,7 +16,7 @@ var imageURLs = {
   s2 : require('../assests/images/mainslider/s2.jpg'),
   s3 : require('../assests/images/mainslider/s3.jpg'),
   addedcart : require('../assests/images/addedcart.png'),
-  
+  chef_hat :require('../assests/images/chef_hat.png')
 
   
 }

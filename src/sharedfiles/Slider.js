@@ -19,6 +19,8 @@ import {
     const {settings,data, cards} = this.props;
    
     return (
+
+     <div className="slider-wrapper">
       <Slider {...settings}>
          {  
           data &&  
@@ -50,6 +52,7 @@ import {
           }
 
          </Slider>
+         </div> 
       );
     }
   })

@@ -1,25 +1,31 @@
 
 @import 'variables';
 
+.mainSlider-section {
+.homeSlider {
+  background-color: #fff;
+  margin-bottom: 40px;
 
-.catogarySlidermmmmmmm {
-  
-   .product-bottom{
-    display: none;
+  ul {
+    background-color: #fff;
   }
   
-   .srch{
-     display: none;
+ }
+
+ .wave-separator {
+  margin-top:-15px;
   }
-  
-  &:hover .card-overlay {
-        display: block;
-        .card-overlay-title {
-            font-family: 'Pacifico', cursive;
-            color: $primaryColor;
-            font-size: 25px;
-        }
-    }
-  
-    
+}
+
+
+.section-with-bg {
+  background-image: url("https://cakeryshop3.bolvo.com/test2/wp-content/uploads/sites/3/2019/11/a.jpg");
+  background-size: cover;
+  padding: 160px;
+
+  .btn-wrapper  {
+    width:120px;
+  }
+
+
 }

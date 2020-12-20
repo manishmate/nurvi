@@ -14,10 +14,7 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 padding: 15px;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-background-image: url('https://colorlib.com/etc/lf/Login_v5/images/bg-01.jpg');
+background: $graident;
 
 .container-login100-form-btn {
     display: -webkit-box;

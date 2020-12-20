@@ -17,6 +17,7 @@ const LoginLayout = observer(
     
      successResponseGoogle = (response) => {
         console.log(response);
+        this.props.appstore.loggedIn = true;
         this.props.appstore.navigate("/home");
         this.props.appstore.menuChanged = "/home";
       } 

@@ -1,5 +1,5 @@
 {
-  "homepage": "http://manishmate.github.io/nurviapp",
+  "homepage": "/",
   "name": "nurvi",
   "version": "0.1.0",
   "private": true,
@@ -24,12 +24,11 @@
     "react-scripts": "4.0.0",
     "react-select": "^3.1.0",
     "react-slick": "^0.27.11",
+    "react-top-loading-bar": "^2.0.1",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

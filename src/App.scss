@@ -8,6 +8,7 @@
 
 
 
+
 .App {
   text-align: center;
 }
@@ -71,9 +72,13 @@ left: 73px;
  }
 }
 section {
-  margin-bottom: 45px;
+  background-color: #fff;
 }
 
+.container {
+  padding: 20px;
+ 
+}
 
 
 body {
@@ -81,13 +86,7 @@ body {
 }
 
 
-.headerContainer .navbar {
-  background-color: $secondaryColor !important;
-}
 
-.homeSlider {
-  margin-bottom: 40px;
-}
 
 .card {
   padding: 6px;;
@@ -95,7 +94,7 @@ body {
   display: block;
   margin: 30px auto;
   transition: .25s;
-  
+  border: 2px solid rgba(0,0,0,.125) !important;
   
 }
 
@@ -254,17 +253,6 @@ img.zoom-img {
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
 }
-
-
-
-
-
-
-.appfooter {
-   background-color: #145541;
-  color:#F28832;
-}
-
 
 .about-left figure {
   position: relative;

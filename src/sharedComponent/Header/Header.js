@@ -11,8 +11,11 @@ import {
 
 import DropdownComponent from '../../sharedComponent/Dropdown/DropdownComponent'
 import HeaderStore from './HeaderStore';
-
-
+ import TopbarLoader from '../../sharedfiles/TopbarLoader';
+ import { IconContext } from "react-icons";
+ import { IoIosCall } from 'react-icons/io';
+ import {BiTime } from 'react-icons/bi';
+ import {AiFillFacebook, AiFillInstagram , AiFillYoutube} from 'react-icons/ai';
 
 const Header = observer(
     class Header extends React.Component {
@@ -31,7 +34,32 @@ const Header = observer(
         
             const {appstore} = this.props;
             return(
-              <div class="headerContainer">
+              <div className="headerContainer">
+                <div className="top-head">
+                  <div className="top-head-icon">
+                    <div className="left-top-head floatLeft ml-5">
+                        <IconContext.Provider value={{className: "call-icon" }}>
+                                      <IoIosCall /> +919326862769
+                          </IconContext.Provider>
+                          <IconContext.Provider value={{className: "time-icon" }}>
+                                      <BiTime /> Mon - Sat: 8AM - 5PM
+                          </IconContext.Provider>
+                      </div>
+
+                      <div className="right-top-head floatRight">
+                          <IconContext.Provider value={{}}>
+                                      <AiFillFacebook />
+                          </IconContext.Provider>
+                          <IconContext.Provider value={{}}>
+                                      <AiFillInstagram />
+                          </IconContext.Provider>
+                          <IconContext.Provider value={{ }}>
+                                      <AiFillYoutube />
+                          </IconContext.Provider>
+                      </div>
+                  </div>
+
+                </div>
                 <Navbar bg="light" expand="lg">
                 <Navbar.Brand href="#home">
                     <img 
@@ -67,13 +95,14 @@ const Header = observer(
                   </Form>
                   <Link to="/login">
                     
-                     <div className="btn-wrapper">
+                     <div className="ml-2 btn-wrapper">
                             <Button className="mr-1 ml-1 primary small"  type="submit">
                                  Login
                              </Button>
                       </div>
                   </Link>
-                  <div className="dropDownWrapper">
+             {this.props.appstore.loggedIn &&
+                  <div className="ml-2 dropDownWrapper">
                         <div className="customDrpDwn small">
                             <DropdownComponent dropDownOptions={this.headerStore.userProfileOption}
                                 store={this.headerStore}
@@ -81,7 +110,7 @@ const Header = observer(
                                 selectedOption={this.headerStore.selectedUserOption} />
                         </div>
                    </div>
-
+                  }
                   <div className="m-4 addtoCartIcon">
                    <img 
                         src={imageURLs.addedcart.default}
@@ -93,7 +122,8 @@ const Header = observer(
                   </div>
                 </Navbar.Collapse>
               </Navbar>
-              
+              {/* <TopbarLoader/> */}
+              <div className="header-wave-separator"></div>
               </div>
             )
         }
