@@ -1,0 +1,40 @@
+
+@import 'variables';
+
+.mainSlider-section {
+.homeSlider {
+  background-color: #fff;
+  margin-bottom: 40px;
+
+  ul {
+    background-color: #fff;
+  }
+  
+ }
+
+ .wave-separator {
+  margin-top:-15px;
+  }
+}
+
+
+.section-with-bg {
+  background-image: url("../images/section-bg.jpg");
+  background-size: cover;
+  padding: 160px;
+
+
+ .section-with-bg-content {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  
+  .btn-wrapper  {
+    width:120px;
+  }
+
+
+}
