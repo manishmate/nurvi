@@ -7,19 +7,39 @@ class CakeComponentStore {
   	constructor(){
       
 
-      this.cakeData = 
-        [
-          {  "imgUrl":imageUrls.catogary_0.default,
-             "title": "Bakery Products",
-             "type" : "cake",
-             "productId":1
-          },
-          {  "imgUrl":imageUrls.catogary_1.default,
-             "title":"Cakes",
-             "type" : "cake",
-             "productId":2
-          },
-        ]
+      this.items = 
+      [
+        {  "imgUrl":imageUrls.catogary_0.default,
+           "title": "Bakery Products",
+           "type" : "cake",
+           "productId":1
+        },
+        {  "imgUrl":imageUrls.catogary_1.default,
+           "title":"Cakes",
+           "type" : "cake",
+           "productId":2
+        },
+        {  "imgUrl":imageUrls.catogary_2.default,
+           "title":"Pastry",
+           "type" : "cake",
+           "productId":3
+        },
+        {  "imgUrl":imageUrls.catogary_0.default,
+           "title": "Bakery Products",
+           "type" : "cake",
+           "productId":4
+        },
+        {  "imgUrl":imageUrls.catogary_1.default,
+           "title":"Cakes",
+           "type" : "cake",
+           "productId":5
+        },
+        {  "imgUrl":imageUrls.catogary_2.default,
+           "title":"Pastry",
+           "type" : "cake",
+           "productId":6
+        }
+      ]
        
 
     }
@@ -27,7 +47,7 @@ class CakeComponentStore {
  }
 
     decorate(CakeComponentStore, {
-      
+      items:observable
     });
 
 

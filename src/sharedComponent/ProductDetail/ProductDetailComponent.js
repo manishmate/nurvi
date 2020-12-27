@@ -8,6 +8,8 @@ import { Container, Row, Col, Breadcrumb, ButtonToolbar, ButtonGroup, Button,
 import ProductDetailComponentStore from './ProductDetailComponentStore'
 import ProductImgSlider from './ProductImgSlider';
 import DropdownComponent from '../../sharedComponent/Dropdown/DropdownComponent'
+import ImagesURLs from '../../sharedfiles/ImagesURLs'
+
 
 const ProductDetailComponent = observer(
     class ProductDetailComponent extends React.Component {
@@ -137,9 +139,13 @@ const ProductDetailComponent = observer(
                     <section>
                         <Container fluid={true}>
                             <Container>
-                                <div className="section-title bg-light">
-                                    <h2 className="title">Best Selling Bakery Product</h2>
-                                </div>
+                               
+                                <div className="section-title">
+                                    <h2 className="title">Best Selling Bakery Products</h2>
+                                    <div cassName="chef_hat_img">
+                                        <img src={ImagesURLs.chef_hat.default}/>
+                                    </div>
+                                    </div>
                             </Container>
                             <ReactSlider
                                 settings={{

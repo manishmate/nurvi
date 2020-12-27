@@ -26,6 +26,7 @@
     "react-slick": "^0.27.11",
     "react-top-loading-bar": "^2.0.1",
     "slick-carousel": "^1.8.1",
+    "typeface-pacifico": "^1.1.13",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

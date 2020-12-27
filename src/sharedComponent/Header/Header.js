@@ -61,21 +61,23 @@ const Header = observer(
 
                 </div>
                 <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">
+                <Navbar.Brand>
+
                     <img 
                         src={imageURLs.logoIcon.default}
                         width="30"
                         height="30"
                         className="Applogo d-inline-block align-top"
                         alt="Nurvi"
+                        onClick={() => appstore.navigate("/")}
                     />
                    
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto">
-                    <Nav.Link href="#"><Link to="/">Home</Link></Nav.Link>
-                    <Nav.Link href="#"><Link to="/">Link</Link></Nav.Link>
+                    <Nav.Link  onClick={() => appstore.navigate("/")}>Home</Nav.Link>
+                    <Nav.Link >Link</Nav.Link>
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                       <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                       <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

@@ -11,11 +11,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button,Form } from 'react-bootstrap';
 import navigationStore from './sharedfiles/navigationStore';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import { Router } from 'react-router';
+import { Route ,Switch} from 'react-router-dom';
 
 import LoginLayout from './layouts/LoginLayout';
 import MainLayout from './layouts/MainLayout';

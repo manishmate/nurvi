@@ -4,8 +4,8 @@ import { observer } from 'mobx-react';
 import ReactSlider from "../sharedfiles/Slider";
 import CatogarySlider from "../sharedfiles/CatogarySlider";
 import { Container,Row,Col,Button } from 'react-bootstrap';
-import HomepageLayoutStore from './HomepageLayoutStore'
-import ImagesURLs from '../sharedfiles/ImagesURLs'
+import HomepageLayoutStore from './HomepageLayoutStore';
+import ImagesURLs from '../sharedfiles/ImagesURLs';
 
 const HomePageLayout = observer(
   class HomePageLayout extends React.Component {
@@ -56,7 +56,7 @@ const HomePageLayout = observer(
                 { this.homepageLayoutStore.catagoryData.map((data,index)=> {
                 return (
                     <Col md={4}>
-                      <div class="catogoryCard about-left"  onClick={()=> appstore.navigate("/cake")}>
+                      <div class="catogoryCard about-left"  onClick={()=> appstore.navigate("/cakes")}>
                       <figure class="effect-bubba">
                        
                         <img class="img-responsive" src={data.catogary_img} alt="" />
@@ -71,28 +71,11 @@ const HomePageLayout = observer(
                 }
               </Row>
 
-
-
-              {/* <CatogarySlider
-                settings={{
-                  dots: false,
-                  infinite: false,
-                  speed: 500,
-                  slidesToShow: 3,
-                  slidesToScroll: 4,
-                  initialSlide: 0,
-                  responsive: this.homepageLayoutStore.responsiveBreakPoints,
-
-                }}
-
-                cards={this.homepageLayoutStore.catagoryData}
-              />
-             */}
              </Container>
           </section>
           <section>
               <Container >
-              <Container>
+                <Container>
                 <div className="section-title">
                   <h2 className="title">Best Selling Cakes</h2>
                   <div cassName="chef_hat_img">
