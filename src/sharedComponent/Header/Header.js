@@ -60,6 +60,7 @@ const Header = observer(
                   </div>
 
                 </div>
+                
                 <Navbar bg="light" expand="lg">
                 <Navbar.Brand>
 
