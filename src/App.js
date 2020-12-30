@@ -14,7 +14,7 @@ import navigationStore from './sharedfiles/navigationStore';
 import { Router } from 'react-router';
 import { Route ,Switch} from 'react-router-dom';
 
-import LoginLayout from './layouts/LoginLayout';
+import LoginComponent from './components/LoginComponent/LoginComponent';
 import MainLayout from './layouts/MainLayout';
 
 
@@ -34,7 +34,7 @@ const App = observer(
            <Switch>
              
            <Route path="/login" exact render={() =>
-               <LoginLayout appstore={this.appstore} />
+               <LoginComponent appstore={this.appstore} />
                }>
              </Route>
 
