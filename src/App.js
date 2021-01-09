@@ -16,7 +16,7 @@ import { Route ,Switch} from 'react-router-dom';
 
 import LoginComponent from './components/LoginComponent/LoginComponent';
 import MainLayout from './layouts/MainLayout';
-
+import RegistrationComponent from './components/Registration/RegistrationComponent';
 
 const App = observer(
   class App extends React.Component {
@@ -37,6 +37,12 @@ const App = observer(
                <LoginComponent appstore={this.appstore} />
                }>
              </Route>
+
+             <Route path="/registration" exact render={() =>
+               <RegistrationComponent appstore={this.appstore} />
+               }>
+             </Route>
+
 
              <Route path="/"  render={() =>
                <MainLayout appstore={this.appstore} />

@@ -96,14 +96,15 @@ const Header = observer(
                       </div>
                     
                   </Form>
-                  <Link to="/login">
-                    
-                     <div className="ml-2 btn-wrapper">
+
+                  {!this.props.appstore.loggedIn &&
+                    <div className="ml-2 btn-wrapper" onClick={()=>appstore.navigate("/login")}>
                             <Button className="mr-1 ml-1 primary small"  type="submit">
                                  Login
                              </Button>
                       </div>
-                  </Link>
+                 
+                }
              {this.props.appstore.loggedIn &&
                   <div className="ml-2 dropDownWrapper">
                         <div className="customDrpDwn small">
