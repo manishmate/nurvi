@@ -9,19 +9,36 @@
 
 .cartWrapper {
      padding:20px;
-     background:#ccc;
+     background:#fff;
+     box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
 
      .cartWrapper-head{
        background-color: #fff;
+       border-bottom: 1px solid #f0f0f0;
      }
 
-     .cartProduct-img{
 
-        img { 
-         width: 120px;
-         height: 120px;
-        }
+
+     .cartProduct {
+      border-bottom: 1px solid #f0f0f0;
+      padding: 10px;
+
+            .cartProduct-img{
+
+               img { 
+               width: 120px;
+               height: 120px;
+               }
+            }
+            
+            .product-remove-icon {
+               font-size: 35px;
+               color: #e60000;
+               cursor: pointer;
+            }
+      
      }
+     
 
     .quantity-handler{
        

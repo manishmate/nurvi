@@ -7,6 +7,7 @@ import CartComponentStore from './CartComponentStore'
 import DropdownComponent from '../../sharedComponent/Dropdown/DropdownComponent'
 import { AiOutlineMinusCircle,AiOutlinePlusCircle } from 'react-icons/ai';
 import { IconContext } from "react-icons";
+import {TiDelete} from 'react-icons/ti';
 
 const CartComponent = observer(
     class CartComponent extends React.Component {
@@ -49,7 +50,7 @@ const CartComponent = observer(
                                     
                                     <Col md={8}>
                                     <Container >
-                                        <div className="cartWrapper section-title bg-light">
+                                        <div className="cartWrapper section-title">
                                         <div className="mb-5 cartWrapper-head">
                                             <h3 className="ta-left title ml-2">My Cart 
                                             
@@ -63,7 +64,7 @@ const CartComponent = observer(
                                           <Row>
                                            <Col md={6}>
                                            
-                                           <div className="">
+                                           <div className="floatLeft mr-4">
                                              <div className=" mb-2 cartProduct-img">
                                                <img class="img-responsive" src={product.imgUrl}
                                                alt=""/>
@@ -91,11 +92,8 @@ const CartComponent = observer(
    
                                              </div> 
                                            </div>
-                                           
-                                           
-                                         </Col>
-                                         <Col md={6}>
-                                           <div className="cart-product-detail">
+
+                                           <div className="cart-product-detail  ta-left">
                                                <div className="product-title-name">
                                                     <h5>{  product.title}</h5>
                                                </div>
@@ -111,11 +109,30 @@ const CartComponent = observer(
                                                         <h6>
                                                         {product.offerPrice}
                                                         </h6>
-                                                        <h6>
-                                                        {product.actualPrice} 
-                                                        </h6>
                                                     </div>
                                                 </div>
+                                           </div>
+                                           
+                                           
+                                         </Col>
+                                         <Col md={6}>
+                                           <div className="cart-product-left">
+                                           <div class="floatRight" title="remove item">
+                                                   <IconContext.Provider value={{className: "product-remove-icon" }}>
+                                                       <TiDelete />
+                                                   </IconContext.Provider>
+                                                </div>
+                                               <div className=" ">
+                                               <div className="dropDownWrapper">
+                                                <div className="customDrpDwn small">
+                                                    <DropdownComponent dropDownOptions={this.cartStore.quatities}
+                                                        store={this.cartStore}
+                                                        callBack={(selectedOption) => this.cartStore.quantitySelected = selectedOption}
+                                                        selectedOption={this.cartStore.quantitySelected} />
+                                                </div>
+                                            </div>
+                                               </div>
+                                               
                                            </div>
                                          
                                          
@@ -135,7 +152,7 @@ const CartComponent = observer(
                                   
                                 <Col md={4}>
                                     <Container >
-                                        <div className="cartWrapper section-title bg-light">
+                                        <div className="cartWrapper section-title">
                                         <div className="mb-5 cartWrapper-head">
                                             <h3 className="ta-left title ml-2">Order Summary
                                             
@@ -161,6 +178,13 @@ const CartComponent = observer(
                                                     </div>
                                                 </div>
                                            </div>
+
+                                           <div className="mt-5 btn-wrapper big">
+                                                <Button className="primary " >
+                                               Place Order
+                                                </Button>
+                                            </div>
+                                            
                                           </div>
                                            </Container >
                                          </Col>

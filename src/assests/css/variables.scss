@@ -1,7 +1,7 @@
-$primaryColor : #F05F69;
-$secondaryColor : #FBE56B;
+$primaryColor : #E31464;
+$secondaryColor : #21B9BA;
 $mainFontstyle :'Pacifico', cursive;
-$graident : linear-gradient(90deg, #f05f69 0%, #fbe56b 100%);
+$graident : linear-gradient(90deg, $primaryColor 0%, $secondaryColor  100%);
 $fbColor:#3b5998;
 $twitterColor:#55acee;
 $googlePlusColor:#dc4e41;

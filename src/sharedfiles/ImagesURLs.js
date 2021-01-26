@@ -1,6 +1,6 @@
 var imageURLs = {
   
-  logoIcon: require('../assests/images/logo.jpg'),
+  logoIcon: require('../assests/images/logo.png'),
   fb: require('../assests/images/fb-blue.png'),
   fborange: require('../assests/images/fb-orange.png'),
   twitter: require('../assests/images/twitter-blue.png'),

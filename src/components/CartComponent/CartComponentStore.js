@@ -1,4 +1,5 @@
 import { decorate, observable, action } from 'mobx';
+import { observer } from 'mobx-react';
 import imageUrls from '../../sharedfiles/ImagesURLs';
 
 
@@ -7,6 +8,14 @@ class CartComponentStore {
   	constructor(){
       
    
+      this.quatities =[
+         {"label":1,"value":1},
+        {"label":2,"value":2},
+        {"label":3,"value":3}
+        ];
+   
+      this.quantitySelected = {"label":1,"value":1};
+
       this.totalCartProducts =  [
         {  "imgUrl":imageUrls.s1.default,
            "title": "Bakery Products",
@@ -52,6 +61,8 @@ class CartComponentStore {
     decorate(CartComponentStore, {
       
       totalCartProducts:observable,
+      quantitySelected:observable,
+      quantity:observable
     });
 
 
