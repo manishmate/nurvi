@@ -7,6 +7,8 @@ import HomePageLayout from './HomePageLayout';
 import ProductDetailComponent from '../sharedComponent/ProductDetail/ProductDetailComponent';
 import CartComponent from '../components/CartComponent/CartComponent';
 import CakeComponent from '../components/CakeComponent/CakeComponent';
+import AboutUsComponent from '../components/AboutUsComponent/AboutUsComponent';
+import ContactComponent from '../components/ContactComponent/ContactComponent';
 import {
     BrowserRouter as Router,
     Switch,
@@ -54,6 +56,14 @@ const MainLayout = observer(
                     <CakeComponent appstore={appstore} />
                 }>
                 </Route>
+
+                <Route path="/aboutus" exact render={() =>
+                           <AboutUsComponent appstore={appstore} />
+                }></Route>
+
+                <Route path="/contactus" exact render={() =>
+                          <ContactComponent appstore={appstore} />
+                }></Route>
 
                 </Switch>
              

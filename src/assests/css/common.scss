@@ -179,3 +179,24 @@ button:focus {
 }
 
 
+.section-with-bg-header {
+    background-image: url("../images/bg_header.jpg");
+    background-size: cover;
+    padding: 160px;
+}
+
+.section-with-bg-content {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  
+
+  
+  .btn-wrapper  {
+    width:120px;
+  }
+
+

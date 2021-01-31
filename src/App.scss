@@ -37,41 +37,6 @@ left: 73px;
   height: 70px;
   cursor: pointer;
 }
-
-.addtoCartIcon{
-
- img {
-   position: relative;
-   cursor: pointer;
-   border-radius: 50px;
-    -webkit-box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow:1px 0px 3px 0px rgba(0, 0, 0, 1);
-    box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 1);
- } 
-
- img:hover{
-  border-radius: 50px;
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
- }
- .count {
-      position: absolute;
-      top: 25px;
-      right: 37px;
-      background: #red;
-      white-space: nowrap;
-      text-align: center;
-      line-height: 18px;
-      padding: 0 6px;
-      height: 18px;
-      background: #000;
-      border-radius: 50%;
-      font-size: 12px;
-      color: #fff;
-      font-weight: 700;
- }
-}
 section {
   background-color: #fde8e9;
 }
@@ -398,3 +363,142 @@ figure.effect-bubba:hover p,figure.effect-bubba:hover h2 {
   
 }
 
+//sidebar mobile menu
+.sidenav {
+
+  
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+
+a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+ a:hover {
+  color: #f1f1f1;
+}
+
+button {
+  cursor: pointer;
+}
+
+.closebtn {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+}
+
+//sidebar mobile menu
+
+
+//contact
+
+
+//about
+.about-section {
+   
+  .aboutus-content {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5em;
+    color: #7a7a7a;
+  }
+}
+
+.circle_wrapper {
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  opacity: 0.7;
+  width: 100%;
+  height: 0;
+  padding: 50% 0;
+  border-radius: 100%;
+  background-color: #e47277;
+}
+.circle .content .text {
+  margin-top: 15px;
+  font-size: 30px;
+  color: #fff;
+}
+.circle .content .number {
+  font-weight: bold;
+  font-size: 60px;
+  color: #fff;
+  line-height: 100%;
+}
+}
+
+
+
+.staff-profile-container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.staff-profile-container:hover .overlay {
+  opacity: 1;
+}
+
+
+//about
+@media screen and (max-height: 430px){
+
+  .Applogo {
+    width:50px;
+    height: 50px;
+  }
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    a {font-size: 18px;}
+  }
+  
+}
