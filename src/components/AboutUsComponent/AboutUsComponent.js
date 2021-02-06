@@ -122,11 +122,43 @@ const AboutUsComponent = observer(
 
        <section>
        <div className="container">
+
+       <h1 className="heading__secondary title">About Us</h1>
+      
+      <div className="row">
+
+      <div className="col3">
        <div className="staff-profile-container">
-          <img src="img_avatar.png" alt="Avatar" className="image"/>
+          <img src={imageURLs.staff1.default} alt="Avatar" className="image"/>
           <div className="overlay">My Name is John</div>
         </div>
         </div>
+
+        <div className="col3">
+        <div className="staff-profile-container">
+          <img src={imageURLs.staff1.default} alt="Avatar" className="image"/>
+          <div className="overlay">My Name is John</div>
+        </div>
+        </div>
+
+
+<div className="col3">
+       <div className="staff-profile-container">
+          <img src={imageURLs.staff1.default} alt="Avatar" className="image"/>
+          <div className="overlay">My Name is John</div>
+        </div>
+        </div>
+
+        <div className="col3">
+        <div className="staff-profile-container">
+          <img src={imageURLs.staff1.default} alt="Avatar" className="image"/>
+          <div className="overlay">My Name is John</div>
+        </div>
+        </div>
+</div>
+        </div> 
+
+
        </section>
         
     </React.Fragment>	

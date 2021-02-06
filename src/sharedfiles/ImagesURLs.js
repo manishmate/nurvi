@@ -23,7 +23,8 @@ var imageURLs = {
   addedcart : require('../assests/images/addedcart.png'),
   chef_hat :require('../assests/images/chef_hat.png'),
   chef_avatar : require('../assests/images/chef.jpg'),
-  
+  staff1: require('../assests/images/staff1.jpg'),
+  staff2: require('../assests/images/staff2.jpg'),
 }
 
 export default imageURLs;
