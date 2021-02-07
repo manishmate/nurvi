@@ -412,15 +412,43 @@ button {
 
 //contact
 
+.contact-us-wrapper 
+{
+
+  textArea {
+  width: 100%;
+  height: 200px;
+
+      color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5em;
+    color: #7a7a7a;
+    font-family:$thirdFontStyle;
+  }
+
+  a {
+    color: $primaryColor;
+  }
+}
 
 //about
-.about-section {
+.article-section {
    
   .aboutus-content {
     font-size: 15px;
     font-weight: normal;
     line-height: 1.5em;
     color: #7a7a7a;
+    font-family:$thirdFontStyle;
   }
 }
 
@@ -452,41 +480,129 @@ button {
 }
 
 
-
-.staff-profile-container {
+.about-staff-conatiner {
   position: relative;
-  width: 50%;
-  max-width: 300px;
-}
+  width: 90%;
+  max-width: 250px;
+-webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius:5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
 
 .image {
   display: block;
   width: 100%;
   height: auto;
+  -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius:5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
+ .avatar_overlay{
+ 
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -88;
+    margin-bottom: -58px;
+    background-color: #ec9da0;
+    opacity: 0;
+    color: #ffffff;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    line-height: 40px;
+    -moz-transition: all 0.45s ease;
+    -webkit-transition: all 0.45s ease;
+    -o-transition: all 0.45s ease;
+    -ms-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+  
 }
 
-.staff-profile-container:hover .overlay {
+&:hover .avatar_overlay {
+
   opacity: 1;
+  bottom:0;
+  margin-bottom:38px;
+}
+.avatar_name{
+ text-align : center;
+ border:1px solid #ccc;
+ padding:10px;
+  -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 
+
+}
+
+
+.about-us-core-values {
+
+  p {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5em;
+    color: #7a7a7a;
+    font-family:$thirdFontStyle;
+  }
+
+  h3 {
+    font-size: 24px;
+    color: #2a2a2a;
+    font-family: $secondaryfontStyle;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .left-side h3{
+    text-align: right;
+  }
+
+  .left-side p{
+    text-align: right;
+  }
+
+  .right-side h3{
+    text-align: left;
+  }
+
+  .right-side p{
+    text-align: left;
+  }
+
+.separator {
+  
+  
+  .center_line_circle {
+    margin: auto;
+    background-color: #7a7a7a;
+    width:10px; height:10px; border-radius:10px; 
+  }
+  
+  .center_line {
+     width: 2px;
+     height: 300px;
+      margin: auto;
+    background-color: #7a7a7a;
+     
+  }
+  
+}
+}
 
 //about
-@media screen and (max-height: 430px){
+@media screen and (max-width: 430px){
 
   .Applogo {
     width:50px;
@@ -495,10 +611,32 @@ button {
 
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
   .sidenav {
     padding-top: 15px;
     a {font-size: 18px;}
   }
+
+  .left-top-head {
+    font-size: 11px;
+    margin-left: 0px !important;
+  }
+
+  .top-head .right-top-head {
+    margin-right: 1rem;
+}
   
+}
+
+@media screen and (max-width: 576px) {
+  .about-us-core-values {
+
+     .left-side .value-content-wrapper p {
+       text-align: left !important;
+     }
+
+     .left-side .value-content-wrapper h3 {
+      text-align: left !important;
+    }
+  }
 }

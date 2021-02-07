@@ -46,7 +46,7 @@ const Header = observer(
               <div className="headerContainer">
                 <div className="top-head">
                   <div className="top-head-icon">
-                      <div className="left-top-head floatLeft ml-5">
+                      <div className="left-top-head floatLeft ml-sm-5">
                         <IconContext.Provider value={{className: "call-icon" }}>
                                       <IoIosCall /> +919326862769
                           </IconContext.Provider>
@@ -100,7 +100,7 @@ const Header = observer(
                           
                            <Form className="w-100">
                               <Form.Group className="m-0" controlId="formSearch">
-                                <Form.Control type="search" placeholder=" Search product                                                            🔍" />
+                                <Form.Control type="search" placeholder=" Search product                                                   🔍" />
                               </Form.Group>
 
                               {/* <div className="btn-wrapper">
@@ -175,8 +175,8 @@ const Header = observer(
                               </a>
                             }
                         <a  className="menu-option" onClick={() => appstore.navigate("/")}>Home</a>
-                        <a  className="menu-option" onClick={() => appstore.navigate("/")}>About Us</a>
-                        <a  className="menu-option" onClick={() => appstore.navigate("/")}>Contact Us</a>
+                        <a  className="menu-option" onClick={() => appstore.navigate("/aboutus")}>About Us</a>
+                        <a  className="menu-option" onClick={() => appstore.navigate("/contactus")}>Contact Us</a>
 
                         
                     </div> 
