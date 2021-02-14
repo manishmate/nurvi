@@ -28,7 +28,7 @@ const Footer = observer(
                                 <div className="">
                                     <h3 className="title">About Us</h3>
 
-                                    <p>Cakeryshop theme is a versatile and beautiful WordPress theme. This theme is specially designed for Bakery related items such as Cakes, Brownies, Biscuits etc. It comes with auto demo import features and powerful theme options panel.</p>
+                                    <p>Nurvi theme is a versatile and beautiful WordPress theme. This theme is specially designed for Bakery related items such as Cakes, Brownies, Biscuits etc. It comes with auto demo import features and powerful theme options panel.</p>
                                 </div>
                             </Col>
                             <Col col="md-4">
