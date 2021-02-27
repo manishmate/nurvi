@@ -28,7 +28,7 @@ const CakeComponent = observer(
         <React.Fragment>
 
             <section>
-              <Container>
+              <Container fluid={true}>
                 <div className="section-title ">
                   <h2 className="title">Cakes</h2>
                   <div cassName="chef_hat_img">
@@ -42,7 +42,7 @@ const CakeComponent = observer(
                       {
                         this.cakeComponentStore.items.map((value,index)=>{
                           return (
-                            <div  className="each-item m-4"> 
+                            <div  className="each-item col-12 col-sm-3"> 
                           
                               <Link to={"/productDetail/"+value.type+"/"+value.productId}>  
                                 <CardComponent data = {value} imgUrl={value.imgUrl} needButton = {true} />

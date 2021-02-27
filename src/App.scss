@@ -61,7 +61,7 @@ body {
 
 .card {
   padding: 6px;;
-  width: 315px;
+  width: 280px;
   display: block;
   margin: 30px auto;
   transition: .25s;
@@ -72,15 +72,15 @@ body {
 .card:hover {
   box-shadow: 0 2px 2px 0 $primaryColor, 0 2px 2px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
-  width: 325px;
+  width: 285px;
 }
 
 .card-header {
-  height: 250px;
+  height: 222px;
   width: 100%;
   padding: 15px;
   width:100%;
-  background-size:cover;
+  background-size:contain;
   color:#fff;
 }
 

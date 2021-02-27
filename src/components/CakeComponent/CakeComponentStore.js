@@ -38,6 +38,16 @@ class CakeComponentStore {
            "title":"Pastry",
            "type" : "cake",
            "productId":6
+        },
+        {  "imgUrl":imageUrls.catogary_2.default,
+           "title":"Pastry",
+           "type" : "cake",
+           "productId":7
+        },
+        {  "imgUrl":imageUrls.catogary_2.default,
+           "title":"Pastry",
+           "type" : "cake",
+           "productId":8
         }
       ]
        

@@ -74,7 +74,7 @@ const HomePageLayout = observer(
              </Container>
           </section>
           <section>
-              <Container >
+              <Container fluid={true} >
                 <Container>
                 <div className="section-title">
                   <h2 className="title">Best Selling Cakes</h2>
@@ -87,7 +87,7 @@ const HomePageLayout = observer(
                   settings={{
                     dots: true,
                     infinite: false,
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                     autoplay: false,
                     speed: 1000,
