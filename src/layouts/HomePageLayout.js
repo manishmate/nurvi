@@ -51,6 +51,7 @@ const HomePageLayout = observer(
                     <img src={ImagesURLs.chef_hat.default}/>
                   </div>
               </div>
+              <br/>
               {/* https://source.unsplash.com/user/erondu/600x400 */}
               <Row className="catogoryRow">
                 { this.homepageLayoutStore.catagoryData.map((data,index)=> {

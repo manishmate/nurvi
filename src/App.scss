@@ -18,6 +18,11 @@ body {
   padding:0px;
 }
 
+::-webkit-input-placeholder {font-family: $mainFontstyle !important;} /* Chrome/Opera/Safari */
+::-moz-placeholder { font-family:  $mainFontstyle !important;} /* Firefox 19+ */
+:-ms-input-placeholder { font-family:  $mainFontstyle !important;} /* IE 10+ */
+:-moz-placeholder {font-family:  $mainFontstyle !important;}  /* Firefox 18- */
+
 
 h5 {
   font-family: 'Fira Sans Extra Condensed', sans-serif;
@@ -238,6 +243,7 @@ img.zoom-img {
 .about-left figure img {
   position: relative;
   display: block;
+  width:100%;
 }
 .about-left figure figcaption {
   position: absolute;
@@ -612,6 +618,12 @@ button {
 }
 
 @media screen and (max-width: 450px) {
+
+  h2.primary-title  {
+       
+     font-size: 14px;;
+  }
+
   .sidenav {
     padding-top: 15px;
     a {font-size: 18px;}
