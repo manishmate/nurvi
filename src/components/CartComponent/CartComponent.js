@@ -115,7 +115,7 @@ const CartComponent = observer(
                                            
                                            
                                          </Col>
-                                         <Col md={6}>
+                                         <Col md={6} className="mt-3 mt-md-0">
                                            <div className="cart-product-left">
                                            <div class="floatRight" title="remove item">
                                                    <IconContext.Provider value={{className: "product-remove-icon" }}>

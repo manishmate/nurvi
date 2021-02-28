@@ -166,17 +166,17 @@ const Header = observer(
     
                         <br/><br/>
                         { !this.props.appstore.loggedIn &&
-                             <a> 
+                             <a className="mbl-view-menulogin"> 
                                <div className="btn-wrapper" onClick={()=>appstore.navigate("/login")}>
-                                        <Button className="mr-1 ml-1 primary small">
+                                        <Button className="title mr-1 ml-1 primary small">
                                             Login
                                         </Button>
                                   </div>
                               </a>
                             }
-                        <a  className="menu-option" onClick={() => appstore.navigate("/")}>Home</a>
-                        <a  className="menu-option" onClick={() => appstore.navigate("/aboutus")}>About Us</a>
-                        <a  className="menu-option" onClick={() => appstore.navigate("/contactus")}>Contact Us</a>
+                        <a  className="menu-option title" onClick={() => appstore.navigate("/")}>Home</a>
+                        <a  className="menu-option title" onClick={() => appstore.navigate("/aboutus")}>About Us</a>
+                        <a  className="menu-option title" onClick={() => appstore.navigate("/contactus")}>Contact Us</a>
 
                         
                     </div> 

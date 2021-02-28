@@ -619,10 +619,12 @@ button {
 
 @media screen and (max-width: 450px) {
 
-  h2.primary-title  {
-       
-     font-size: 14px;;
+  .title  {
+    white-space: nowrap;
+     font-size: 24px;
   }
+   
+  
 
   .sidenav {
     padding-top: 15px;
@@ -631,7 +633,8 @@ button {
 
   .left-top-head {
     font-size: 11px;
-    margin-left: 0px !important;
+    margin-left: 5px !important;
+    margin-top: 4px;
   }
 
   .top-head .right-top-head {

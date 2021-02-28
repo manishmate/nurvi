@@ -39,6 +39,18 @@ font-size: 14px;
 
   .actual-header {
       padding: 5px;
+
+      //mobile menu btn 
+      #sidebarCollapse {
+        background: #21B9BA !important;
+         border: none;
+         
+      }
+
+      .mbl-view-menulogin {
+        display: flex;
+        justify-content: center;
+      }
   }
 
    .userprofileBlock{
