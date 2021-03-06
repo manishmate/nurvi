@@ -48,7 +48,68 @@ class CakeComponentStore {
            "title":"Pastry",
            "type" : "cake",
            "productId":8
+        },
+         {  "imgUrl":imageUrls.catogary_0.default,
+           "title": "Bakery Products",
+           "type" : "cake",
+           "productId":4
+        },
+        {  "imgUrl":imageUrls.catogary_1.default,
+           "title":"Cakes",
+           "type" : "cake",
+           "productId":5
+        },
+        {  "imgUrl":imageUrls.catogary_2.default,
+           "title":"Pastry",
+           "type" : "cake",
+           "productId":6
+        },
+        {  "imgUrl":imageUrls.catogary_2.default,
+           "title":"Pastry",
+           "type" : "cake",
+           "productId":7
+        },
+        {  "imgUrl":imageUrls.catogary_1.default,
+           "title":"Cakes",
+           "type" : "cake",
+           "productId":5
+        },
+        {  "imgUrl":imageUrls.catogary_2.default,
+           "title":"Pastry",
+           "type" : "cake",
+           "productId":6
+        },
+        {  "imgUrl":imageUrls.catogary_2.default,
+           "title":"Pastry",
+           "type" : "cake",
+           "productId":7
+        },
+        {  "imgUrl":imageUrls.catogary_2.default,
+           "title":"Pastry",
+           "type" : "cake",
+           "productId":8
+        },
+         {  "imgUrl":imageUrls.catogary_0.default,
+           "title": "Bakery Products",
+           "type" : "cake",
+           "productId":4
+        },
+        {  "imgUrl":imageUrls.catogary_1.default,
+           "title":"Cakes",
+           "type" : "cake",
+           "productId":5
+        },
+        {  "imgUrl":imageUrls.catogary_2.default,
+           "title":"Pastry",
+           "type" : "cake",
+           "productId":6
+        },
+        {  "imgUrl":imageUrls.catogary_2.default,
+           "title":"Pastry",
+           "type" : "cake",
+           "productId":7
         }
+        
       ]
        
 
