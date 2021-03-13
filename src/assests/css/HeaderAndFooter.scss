@@ -54,10 +54,12 @@ font-size: 14px;
   }
 
    .userprofileBlock{
-    justify-content: center;
-     display: flex;
-  
     
+     cursor: pointer;
+    .userprofile-iconblock {
+      float:left;
+    
+    }
 
   }
 

@@ -59,7 +59,7 @@
 
 .dropDownWrapper .customDrpDwn.small
  {
-    min-width: 100px;
+    min-width: 110px;
     max-width: 100px;
 }
 
@@ -175,6 +175,10 @@ button:focus {
     .slick-prev::before, .slick-next::before {
         font-size: 40px;
         color:$primaryColor;
+    }
+
+    .slick-slide img {
+        width:100%
     }
 }
 

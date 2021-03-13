@@ -1,6 +1,8 @@
 import { decorate, observable, action } from 'mobx';
 import imageUrls from '../../sharedfiles/ImagesURLs';
 import { CgProfile } from 'react-icons/cg';
+import {RiBook3Line} from 'react-icons/ri';
+import {AiFillHeart,AiOutlineLogout} from 'react-icons/ai';
 import { IconContext } from "react-icons";
 
 
@@ -14,15 +16,34 @@ class HeaderStore {
                 <IconContext.Provider value={{className: "social-icons google-icon" }}>
                     <CgProfile />
                     </IconContext.Provider>
-                    </div>Profile</div> ,value:0,id:"myprofile"},
+                    </div>Profile</div> ,
+                    value:0,id:"myprofile"},
 
-            {"label":"Orders",value:1,id:"orders"},
-            {"label":"Wishlist",value:2,id:"wishlist"},
-            {"label":"Logout",value:3,id:"logout"}
+            {"label":<div className="userprofileBlock"><div className="userprofile-iconblock mr-1">
+            <IconContext.Provider value={{className: "social-icons google-icon" }}>
+                <RiBook3Line />
+                </IconContext.Provider>
+                </div>Orders</div>,value:1,id:"orders"},
+
+            {"label":<div className="userprofileBlock"><div className="userprofile-iconblock mr-1">
+                <IconContext.Provider value={{className: "social-icons google-icon" }}>
+                    <AiFillHeart />
+                    </IconContext.Provider>
+                    </div>Wishlist</div>,value:2,id:"wishlist"},
+            {"label":<div className="userprofileBlock"><div className="userprofile-iconblock mr-1">
+            <IconContext.Provider value={{className: "social-icons google-icon" }}>
+                <AiOutlineLogout />
+                </IconContext.Provider>
+                </div>Logout</div>,value:3,id:"logout"}
         
         ];
 
         this.selectedUserOption =   {"label":"",value:0,id:"myprofile"};
+      }
+
+
+      setSelectedOption = (selectedoption) =>{
+        this.selectedUserOption = this.userProfileOption.find(option => option.id === selectedoption.id);
       }
 
     }
