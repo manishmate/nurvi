@@ -24,11 +24,11 @@ const Header = observer(
     constructor(props) {
       super(props);
 
-      this.headerStore = new HeaderStore();
+      this.headerStore = new HeaderStore(this.props.appstore);
     }
     componentDidMount() {
-
-
+       
+         this.headerStore.userProfileOption.push(this.headerStore.adminOption);
     }
 
     openSideNav = () => {
@@ -129,7 +129,7 @@ const Header = observer(
                 <div className="col-6 col-sm-6 col-md-6 col-lg-6">
                   <div className="menu-left  h-100">
                     <div className="row align-items-center h-100">
-                      {!this.props.appstore.loggedIn &&
+                      {!appstore.loggedIn &&
                         <div className="ml-2 btn-wrapper d-none d-lg-flex" onClick={() => appstore.navigate("/login")}>
                           <Button className="mr-1 ml-1 primary small" type="submit">
                             Login
@@ -137,12 +137,12 @@ const Header = observer(
                         </div>
 
                       }
-                      {this.props.appstore.loggedIn &&
+                      {appstore.loggedIn &&
                         <div className="ml-2 dropDownWrapper">
                           <div className="customDrpDwn small">
                             <DropdownComponent dropDownOptions={this.headerStore.userProfileOption}
                               store={this.headerStore}
-                              callBack={(selectedOption) => this.headerStore.selectedUserOption = selectedOption}
+                              callBack={(selectedOption) => this.headerStore.handleUserOption(selectedOption)}
                               selectedOption={this.headerStore.selectedUserOption} />
                           </div>
                         </div>
@@ -165,7 +165,7 @@ const Header = observer(
               <a className="closebtn" onClick={() => this.closeSideNav()}>&times;</a>
 
               <br /><br />
-              {!this.props.appstore.loggedIn &&
+              {!appstore.loggedIn &&
                 <a className="mbl-view-menulogin">
                   <div className="btn-wrapper" onClick={() => appstore.navigate("/login")}>
                     <Button className="title mr-1 ml-1 primary small">

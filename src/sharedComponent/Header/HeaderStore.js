@@ -8,9 +8,19 @@ import { IconContext } from "react-icons";
 
 class HeaderStore {
 	
-  	constructor(){
-           
-        
+  	constructor(appstore){
+
+        this.appStore    = appstore;
+        this.ADD_PRODUCT = 4;
+
+        this.adminOption = {"label":<div className="userprofileBlock"><div className="userprofile-iconblock mr-1">
+             <IconContext.Provider value={{className: "social-icons google-icon" }}>
+            <CgProfile />
+            </IconContext.Provider>
+            </div>Add Products</div> ,
+            value:this.ADD_PRODUCT,id:"myprofile"}
+
+
         this.userProfileOption = [
             {"label":<div className="userprofileBlock"><div className="userprofile-iconblock mr-1">
                 <IconContext.Provider value={{className: "social-icons google-icon" }}>
@@ -45,6 +55,14 @@ class HeaderStore {
       setSelectedOption = (selectedoption) =>{
         this.selectedUserOption = this.userProfileOption.find(option => option.id === selectedoption.id);
       }
+
+      handleUserOption = (selectedoption) => {
+        if(selectedoption.value== this.ADD_PRODUCT)
+            this.appStore.navigate("/admin");
+        else    
+            this.selectedUserOption = selectedoption;
+      }
+     
 
     }
 

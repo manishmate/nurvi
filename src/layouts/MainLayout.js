@@ -9,6 +9,7 @@ import CartComponent from '../components/CartComponent/CartComponent';
 import CakeComponent from '../components/CakeComponent/CakeComponent';
 import AboutUsComponent from '../components/AboutUsComponent/AboutUsComponent';
 import ContactComponent from '../components/ContactComponent/ContactComponent';
+import AdminLayout from '../layouts/AdminLayout';
 import {
     BrowserRouter as Router,
     Switch,
@@ -64,6 +65,11 @@ const MainLayout = observer(
                 <Route path="/contactus" exact render={() =>
                           <ContactComponent appstore={appstore} />
                 }></Route>
+
+                <Route  path="/admin"  exact render={() =>
+                 <AdminLayout appstore={appstore} />
+               }>
+             </Route>
 
                 </Switch>
              

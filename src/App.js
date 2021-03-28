@@ -17,6 +17,7 @@ import { Route ,Switch} from 'react-router-dom';
 import LoginComponent from './components/LoginComponent/LoginComponent';
 import MainLayout from './layouts/MainLayout';
 import RegistrationComponent from './components/Registration/RegistrationComponent';
+import AdminLayout from './layouts/AdminLayout';
 
 const App = observer(
   class App extends React.Component {
@@ -33,7 +34,7 @@ const App = observer(
            
            <Switch>
              
-           <Route path="/login" exact render={() =>
+            <Route path="/login" exact render={() =>
                <LoginComponent appstore={this.appstore} />
                }>
              </Route>
@@ -44,11 +45,13 @@ const App = observer(
              </Route>
 
              
-             <Route path="/"  render={() =>
+             <Route  path="/"  render={() =>
                <MainLayout appstore={this.appstore} />
                }>
              </Route>
+
             
+
             </Switch>
              
           </Router>
