@@ -18,10 +18,10 @@ body {
   padding:0px;
 }
 
-::-webkit-input-placeholder {font-family: $mainFontstyle !important;} /* Chrome/Opera/Safari */
-::-moz-placeholder { font-family:  $mainFontstyle !important;} /* Firefox 19+ */
-:-ms-input-placeholder { font-family:  $mainFontstyle !important;} /* IE 10+ */
-:-moz-placeholder {font-family:  $mainFontstyle !important;}  /* Firefox 18- */
+// ::-webkit-input-placeholder {font-family: $mainFontstyle !important;} /* Chrome/Opera/Safari */
+// ::-moz-placeholder { font-family:  $mainFontstyle !important;} /* Firefox 19+ */
+// :-ms-input-placeholder { font-family:  $mainFontstyle !important;} /* IE 10+ */
+// :-moz-placeholder {font-family:  $mainFontstyle !important;}  /* Firefox 18- */
 
 
 h5 {
@@ -653,5 +653,15 @@ button {
      .left-side .value-content-wrapper h3 {
       text-align: left !important;
     }
+  }
+
+
+  .admin-section-wrapper{
+  
+    .main-wrapper-div{
+      margin: 15px;
+      padding: 15px;
+    }
+   
   }
 }

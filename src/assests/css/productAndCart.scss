@@ -68,3 +68,66 @@
 
 }
 
+.admin-section-wrapper{
+  
+   .main-wrapper-div{
+      background: #fff;
+      box-shadow: 0 0 5px rgba(13, 16, 21, 0.19);
+      border-radius: 20px;
+      background-color: #ffffff;
+      margin: 45px;
+      padding: 45px;
+
+      form {
+        .form-group {
+            text-align:left;
+         }
+
+         textarea {
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            padding: 10px;  
+            width:100%;       }
+
+         .image_upload {
+            cursor: pointer;
+
+           button {
+            width: 138px;
+            height: 35px;
+            border-radius: 3px;
+            border: 1px solid #3ba8c5;
+            background-color: #ffffff;
+            float: left;
+            cursor: pointer;
+           
+          
+               input {
+                  width: 138px;
+                  height: 30px;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  opacity: 0;
+                  cursor: pointer;
+               }
+
+           }
+         }   
+      }
+
+      .admin-page-btn {
+         padding-top: 30px;
+         margin: 30px 15px 15px 15px;
+         border-top: 1px solid #dfdfdf;
+         padding-right: 0;
+         width:100%;
+
+         .btn-wrapper {
+            float: right;
+         }
+      }
+   }
+}
+

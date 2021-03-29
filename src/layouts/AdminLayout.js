@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
-import AdminMainComponent from '../components/AdminComponent/AdminMainComponent';
+import AddProductComponent from '../components/AdminComponent/AddProductComponent';
 
 
 import {
@@ -33,7 +33,7 @@ const AdminLayout = observer(
            
             <Switch>
                 <Route path="/admin" exact render={() =>
-                     <AdminMainComponent appstore={appstore} />
+                     <AddProductComponent appstore={appstore} />
                 }>
                 </Route>
                 
