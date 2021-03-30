@@ -14,10 +14,11 @@ const AddProductComponent = observer(
     }
     render() {
       const appstore = this.props.appstore;
+      
       return (
         <React.Fragment>
           <section className="admin-section-wrapper">
-           <div className="main-wrapper-div">
+           <div className="main-wrapper-div add-wrapper">
            <div className="catogary-wrapper mb-5">
             <div class="admin-heading-div ta-left pb-3 mb-3">
               <h3>Add Category</h3>
@@ -27,7 +28,7 @@ const AddProductComponent = observer(
               <Col md={4}>
               <Form>
             <Form.Row>
-              <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Group as={Col} >
                 <Form.Label>Category Name</Form.Label>
                 <Form.Control type="text" placeholder="Enter category name" />
               </Form.Group>
@@ -60,7 +61,7 @@ const AddProductComponent = observer(
             
             <Form>
             <Form.Row>
-              <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Group as={Col} >
                 <Form.Label>Category</Form.Label>
                 <div className="dropDownWrapper">
                     <div className="customDrpDwn">
@@ -79,7 +80,7 @@ const AddProductComponent = observer(
             
             <Form>
             <Form.Row>
-              <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Group as={Col} >
                 <Form.Label>Product name</Form.Label>
                 <Form.Control type="text" placeholder="Enter product name" />
               </Form.Group>
@@ -94,7 +95,7 @@ const AddProductComponent = observer(
             
             <Form>
             <Form.Row>
-              <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Group as={Col} >
                 <Form.Label>Description</Form.Label><br/>
                    <textarea placeholder="Enter product description">
                    
@@ -108,7 +109,7 @@ const AddProductComponent = observer(
             
                 <Form>
                 <Form.Row>
-                  <Form.Group as={Col} controlId="formGridEmail">
+                  <Form.Group as={Col} >
                     <Form.Label>Upload Image</Form.Label>
 									    <Col>
 										    <div className="image_upload">
@@ -145,7 +146,7 @@ const AddProductComponent = observer(
             
             <Form>
             <Form.Row>
-              <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Group as={Col} >
                 <Form.Label>Product</Form.Label>
                 <div className="dropDownWrapper">
                     <div className="customDrpDwn">
@@ -164,9 +165,9 @@ const AddProductComponent = observer(
             
             <Form>
             <Form.Row>
-              <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Group as={Col} >
                 <Form.Label>Weight</Form.Label>
-                <Form.Control type="text" placeholder="Enter weigth" />
+                <Form.Control type="text" placeholder="Enter weight" />
               </Form.Group>
               </Form.Row>
               </Form>
@@ -179,7 +180,7 @@ const AddProductComponent = observer(
             
             <Form>
             <Form.Row>
-              <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Group as={Col} >
                 <Form.Label>No of quantity available</Form.Label>
                 <Form.Control type="text" placeholder="Enter quantity available" />
               </Form.Group>
@@ -191,7 +192,7 @@ const AddProductComponent = observer(
             
                 <Form>
                 <Form.Row>
-                  <Form.Group as={Col} controlId="formGridEmail">
+                  <Form.Group as={Col} >
                     <Form.Label>Price per quantity</Form.Label>
                     <Form.Control type="text" placeholder="Enter price per quantity" />
                   </Form.Group>
@@ -211,6 +212,88 @@ const AddProductComponent = observer(
                </div>
              </Row>
             </div> 
+            </div> 
+          </section>
+         
+          <section className="admin-section-wrapper">
+           <div className="main-wrapper-div">
+           <div className="delete-catogary-wrapper mb-5">
+            <div class="admin-heading-div ta-left pb-3 mb-3">
+              <h3>Delete Category</h3>
+            </div>
+            <Row>
+           
+              <Col md={4}>
+              <Form>
+            <Form.Row>
+              <Form.Group as={Col} >
+                <Form.Label>Category</Form.Label>
+                <div className="dropDownWrapper">
+                    <div className="customDrpDwn">
+                        <DropdownComponent dropDownOptions={this.addproductStore.allCategory}
+                            store={this.addproductStore}
+                            callBack={(selectedOption) => this.addproductStore.categorySelected = selectedOption}
+                            selectedOption={this.addproductStore.categorySelected} />
+                    </div>
+                </div>
+              </Form.Group>
+              </Form.Row>
+              </Form>
+              </Col>
+
+            </Row>
+
+            <Row>
+               <div className="admin-page-btn">
+                <div className="ml-2 btn-wrapper d-lg-flex delete">
+                          <Button className="mr-1 ml-1 primary small" type="submit">
+                            DELETE
+                          </Button>
+                        </div>
+               </div>
+             </Row>
+
+            </div> 
+
+            <div className="delete-catogary-wrapper mb-5">
+            <div class="admin-heading-div ta-left pb-3 mb-3">
+              <h3>Delete Product</h3>
+            </div>
+            <Row>
+           
+              <Col md={4}>
+              <Form>
+            <Form.Row>
+              <Form.Group as={Col} >
+                <Form.Label>Delete Product</Form.Label>
+                <div className="dropDownWrapper">
+                    <div className="customDrpDwn">
+                        <DropdownComponent dropDownOptions={this.addproductStore.allproducts}
+                            store={this.addproductStore}
+                            callBack={(selectedOption) => this.addproductStore.productSelected = selectedOption}
+                            selectedOption={this.addproductStore.productSelected} />
+                    </div>
+                </div>
+              </Form.Group>
+              </Form.Row>
+              </Form>
+              </Col>
+
+            </Row>
+
+            <Row>
+               <div className="admin-page-btn">
+                <div className="ml-2 btn-wrapper d-lg-flex delete">
+                          <Button className="delete mr-1 ml-1 primary small" type="submit">
+                            DELETE
+                          </Button>
+                        </div>
+               </div>
+             </Row>
+
+            </div> 
+ 
+ 
             </div> 
           </section>
 

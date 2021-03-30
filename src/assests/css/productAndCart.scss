@@ -70,13 +70,23 @@
 
 .admin-section-wrapper{
   
-   .main-wrapper-div{
+   .main-wrapper-div {
+
       background: #fff;
       box-shadow: 0 0 5px rgba(13, 16, 21, 0.19);
       border-radius: 20px;
       background-color: #ffffff;
-      margin: 45px;
+      margin: 35px 25px 25px 25px;
       padding: 45px;
+
+      &.add-wrapper {
+         margin-bottom: 1px;
+      }
+
+      .admin-heading-div {
+         font-family: $mainFontstyle;
+         color: $primaryColor;
+      }
 
       form {
         .form-group {
@@ -101,6 +111,7 @@
             background-color: #ffffff;
             float: left;
             cursor: pointer;
+            text-transform: uppercase;
            
           
                input {
@@ -126,6 +137,15 @@
 
          .btn-wrapper {
             float: right;
+
+            button {
+               text-transform: uppercase;
+
+            }
+
+            &.delete {
+               background:#f05f69 !important;
+           }
          }
       }
    }
