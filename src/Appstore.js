@@ -7,7 +7,7 @@ class Appstore {
         
         this.cartCount = 1;
         this.isAdmin = false;
-        this.loggedIn = true;
+        this.loggedIn = false;
         this.userInfo = {};
         
     }

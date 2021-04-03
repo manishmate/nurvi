@@ -138,7 +138,7 @@ const Header = observer(
 
                       }
                       {appstore.loggedIn &&
-                        <div className="ml-2 dropDownWrapper">
+                        <div className="ml-2 dropDownWrapper d-none d-lg-flex">
                           <div className="customDrpDwn small">
                             <DropdownComponent dropDownOptions={this.headerStore.userProfileOption}
                               store={this.headerStore}
@@ -170,12 +170,24 @@ const Header = observer(
                   <div className="btn-wrapper" onClick={() => appstore.navigate("/login")}>
                     <Button className="title mr-1 ml-1 primary small">
                       Login
-                                        </Button>
+                    </Button>
                   </div>
                 </a>
               }
               <a className="menu-option title" onClick={() => appstore.navigate("/")}>Home</a>
               <a className="menu-option title" onClick={() => appstore.navigate("/aboutus")}>About Us</a>
+              {appstore.loggedIn &&
+                   <a className="menu-option title">
+                        <div className="ml-2 dropDownWrapper">
+                          <div className="customDrpDwn small">
+                            <DropdownComponent dropDownOptions={this.headerStore.userProfileOption}
+                              store={this.headerStore}
+                              callBack={(selectedOption) => this.headerStore.handleUserOption(selectedOption)}
+                              selectedOption={this.headerStore.selectedUserOption} />
+                          </div>
+                        </div>
+                       </a> 
+               }
               <a className="menu-option title" onClick={() => appstore.navigate("/contactus")}>Contact Us</a>
 
 
