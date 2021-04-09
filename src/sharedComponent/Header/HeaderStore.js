@@ -17,7 +17,7 @@ class HeaderStore {
              <IconContext.Provider value={{className: "social-icons google-icon" }}>
             <CgProfile />
             </IconContext.Provider>
-            </div>Add Products</div> ,
+            </div>Admin</div> ,
             value:this.ADD_PRODUCT,id:"myprofile"}
 
 
